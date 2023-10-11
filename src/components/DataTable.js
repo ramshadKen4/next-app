@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DataTable = ({ data, search, columns, handleSelectStudent, handleEditStudent }) => (
+const DataTable = ({ data, search, columns, handleSelect, handleEdit }) => (
   <table className="student-table">
     <thead>
       <tr>
@@ -13,7 +13,7 @@ const DataTable = ({ data, search, columns, handleSelectStudent, handleEditStude
       {data
         .filter((student) => student.name.toLowerCase().includes(search.toLowerCase()))
         .map((student) => (
-          <tr key={student.id} onClick={() => handleSelectStudent(student)}>
+          <tr key={student.id} onClick={() => handleSelect(student)}>
             <td>{student.id}</td>
             <td>{student.name}</td>
           </tr>

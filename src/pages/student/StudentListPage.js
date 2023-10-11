@@ -78,7 +78,7 @@ const StudentListPage = () => {
     <div className="student-list">
       <h1>Student List</h1>
       <SearchBar value={search} onChange={setSearch} />
-      <DataTable data={students} columns={['ID', 'Name']} search={search} handleSelectStudent={handleSelectStudent} handleEditStudent={handleEditStudent} />
+      <DataTable data={students} columns={['ID', 'Name']} search={search} handleSelect={handleSelectStudent} handleEdit={handleEditStudent} />
       {selectedStudent && (
         <div className="action-buttons">
           {isEditing ? (

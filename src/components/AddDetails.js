@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AddStudentForm = ({ onSubmit, buttonText }) => {
+const AddForm = ({ onSubmit, buttonText }) => {
   const [name, setName] = useState('');
 
   const handleSubmit = (e) => {
@@ -24,4 +24,4 @@ const AddStudentForm = ({ onSubmit, buttonText }) => {
   );
 };
 
-export default AddStudentForm;
+export default AddForm;
